@@ -10,7 +10,7 @@ function ProductListingPage() {
       "discountPercentage": 7.17,
       "rating": 4.94,
       "stock": 5,
-      "thumbnail": "...",}
+      "thumbnail": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",}
 
   return (
     <div>ProductListingPage</div>

@@ -1,9 +1,9 @@
 import './App.css'
+import CartPage from './components/CartPage'
 function App() {
 
   return (
-<h1 class="text-3xl font-bold underline">
-  home</h1>
+<CartPage/>
   )
 }
 

@@ -1,18 +1,24 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 function CartPage() {
+  const {cartItems, totalPrice} = useSelector((state)=>state.cart);
   return (
-    <div className='grid gap-4 grid-cols-3'>
-      <h1>CartPage</h1>
-      <h1>CartPage</h1>
-      <h1>CartPage</h1>
-      <h1>CartPage</h1>
-      <h1>CartPage</h1>
-      <h1>CartPage</h1>
-      
-      
+      <div>
+        {
+          cartItems.map((item)=>(
+            <p>
+              {
+              item.title
+              }x {item.quantity}
+            </p>
+          ))
+        }
+            <h3>Total: ${totalPrice}</h3>
       </div>
+      
+      
   )
 }
 
-export default CartPage
+export default CartPage;

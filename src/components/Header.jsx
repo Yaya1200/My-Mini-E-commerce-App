@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 
 const Header = () => {
+  //changes
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
   return (
     <header className="bg-blue-700 text-white shadow-md">
